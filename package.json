@@ -39,5 +39,8 @@
     "prettier": "^1.14.2",
     "pretty-quick": "^1.6.0"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {}
 }
