@@ -1,0 +1,43 @@
+{
+  "name": "commitlint-config-befe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "commitlint config preet for baidu BEFE.",
+  "author": "imcuttle",
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "npm test",
+    "precommit": "pretty-quick --staged",
+    "version": "npm run changelog",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "changelog": "conventional-changelog -p @baidu/befe -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
+  },
+  "keywords": [
+    "commitlint-config-befe"
+  ],
+  "license": "MIT",
+  "repository": "imcuttle/commitlint-config-befe",
+  "jest": {
+    "testMatch": [
+      "**/__test{s,}__/*.(spec|test).{t,j}s{x,}"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "./"
+    ]
+  },
+  "devDependencies": {
+    "@baidu/conventional-changelog-befe": "^1.0.3",
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
+    "@commitlint/lint": "^7.0.0",
+    "@types/jest": "^23.3.1",
+    "conventional-changelog-cli": "^2.0.5",
+    "husky": "^0.14.3",
+    "jest": "^23.5.0",
+    "prettier": "^1.14.2",
+    "pretty-quick": "^1.6.0"
+  },
+  "dependencies": {}
+}
