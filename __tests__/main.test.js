@@ -21,7 +21,7 @@ it('should `Feat: abc`', async function() {
   expect((await lint('feat: abc')).errors.length).toBe(0)
 })
 
-it('should `Feat:abc fail`', async function() {
+it('should `Feat:abc` fails', async function() {
   expect((await lint('Feat:abc')).errors).toEqual([
     { level: 2, message: 'message may not be empty', name: 'subject-empty', valid: false },
     { level: 2, message: 'type may not be empty', name: 'type-empty', valid: false }
@@ -29,11 +29,11 @@ it('should `Feat:abc fail`', async function() {
   expect((await lint('feat:')).errors.length).toBe(2)
 })
 
-it('should `Feat: 哈哈哈` works`', async function() {
+it('should `Feat: 哈哈哈` works', async function() {
   expect((await lint('Feat: 哈哈哈')).errors).toEqual([])
 })
 
-it('should `Feet: 哈哈哈` fails`', async function() {
+it('should `Feet: 哈哈哈` fails', async function() {
   expect((await lint('Feet: 哈哈哈')).errors).toEqual([
     {
       level: 2,
@@ -43,4 +43,12 @@ it('should `Feet: 哈哈哈` fails`', async function() {
       valid: false
     }
   ])
+})
+
+it('should `Feat(123): anc` success', async function() {
+  expect((await lint('Feat(123): anc')).errors).toEqual([])
+})
+
+it('should `Feat(你好): 你好` success', async function() {
+  expect((await lint('Feat(你好): 你好')).errors).toEqual([])
 })
