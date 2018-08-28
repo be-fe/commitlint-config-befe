@@ -31,6 +31,7 @@ module.exports = {
         'revert',
         'style',
         'test',
+        'temp',
         'Build',
         'Chore',
         'Ci',
@@ -41,7 +42,8 @@ module.exports = {
         'Refactor',
         'Revert',
         'Style',
-        'Test'
+        'Test',
+        'Temp'
       ]
     ]
   }

@@ -38,7 +38,7 @@ it('should `Feet: 哈哈哈` fails', async function() {
     {
       level: 2,
       message:
-        'type must be one of [build, chore, ci, docs, feat, fix, perf, refactor, revert, style, test, Build, Chore, Ci, Docs, Feat, Fix, Perf, Refactor, Revert, Style, Test]',
+        'type must be one of [build, chore, ci, docs, feat, fix, perf, refactor, revert, style, test, temp, Build, Chore, Ci, Docs, Feat, Fix, Perf, Refactor, Revert, Style, Test, Temp]',
       name: 'type-enum',
       valid: false
     }
@@ -47,6 +47,14 @@ it('should `Feet: 哈哈哈` fails', async function() {
 
 it('should `Feat(123): anc` success', async function() {
   expect((await lint('Feat(123): anc')).errors).toEqual([])
+})
+
+it('should `Test(123): anc` success', async function() {
+  expect((await lint('Test(123): anc')).errors).toEqual([])
+})
+
+it('should `test(说说): anc` success', async function() {
+  expect((await lint('test(说说): anc')).errors).toEqual([])
 })
 
 it('should `Feat(你好): 你好` success', async function() {
