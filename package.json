@@ -28,7 +28,7 @@
     ]
   },
   "devDependencies": {
-    "@baidu/conventional-changelog-befe": "^1.0.3",
+    "@baidu/conventional-changelog-befe": "^1.2.0",
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
     "@commitlint/lint": "^7.0.0",
