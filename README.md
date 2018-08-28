@@ -32,6 +32,7 @@ npm install \
 
 同时推荐 `npm install -g commitizen`
 全局注入了 `git cz`，用来引导式书写规范的 commit message，十分适合于不熟悉的同学。
+
 ![](https://github.com/commitizen/cz-cli/raw/master/meta/screenshots/add-commit.png)
 
 ## Related
