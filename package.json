@@ -9,6 +9,7 @@
     "prepublishOnly": "npm test",
     "precommit": "pretty-quick --staged",
     "version": "npm run changelog",
+    "commit": "git-cz",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "changelog": "conventional-changelog -p @baidu/befe -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
@@ -28,6 +29,7 @@
     ]
   },
   "devDependencies": {
+    "@baidu/conventional-changelog-befe": "^1.2.1",
     "@baidu/cz-conventional-changelog-befe": "^1.0.1",
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
@@ -44,13 +46,13 @@
     "access": "public"
   },
   "dependencies": {
-    "@baidu/conventional-changelog-befe": "^1.2.0"
+    "@baidu/conventional-commit-types-befe": "^1.0.0"
   },
   "lang": "zh",
   "icafe": "befe-erp",
   "config": {
     "commitizen": {
-      "path": "./index.js"
+      "path": "@baidu/cz-conventional-changelog-befe"
     }
   }
 }
