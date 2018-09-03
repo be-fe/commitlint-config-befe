@@ -4,6 +4,8 @@
  * @description
  */
 
+var getTypes = require('@baidu/conventional-commit-types-befe')
+
 module.exports = {
   parserPreset: require.resolve('@baidu/conventional-changelog-befe'),
   rules: {
@@ -17,35 +19,6 @@ module.exports = {
     'subject-full-stop': [2, 'never', '.'],
     'type-case': [2, 'always', ['lower-case', 'pascal-case']],
     'type-empty': [2, 'never'],
-    'type-enum': [
-      2,
-      'always',
-      [
-        'build',
-        'chore',
-        'ci',
-        'docs',
-        'feat',
-        'fix',
-        'perf',
-        'refactor',
-        'revert',
-        'style',
-        'test',
-        'temp',
-        'Build',
-        'Chore',
-        'Ci',
-        'Docs',
-        'Feat',
-        'Fix',
-        'Perf',
-        'Refactor',
-        'Revert',
-        'Style',
-        'Test',
-        'Temp'
-      ]
-    ]
+    'type-enum': [2, 'always', getTypes().typeKeys]
   }
 }
