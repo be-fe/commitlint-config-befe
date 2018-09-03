@@ -1,3 +1,5 @@
+## [1.2.3](https://github.com/imcuttle/commitlint-config-befe/compare/v1.2.2...v1.2.3) (2018-09-03)
+
 ## [1.2.2](https://github.com/imcuttle/commitlint-config-befe/compare/v1.2.1...v1.2.2) (2018-09-03)
 
 ### 新特性
