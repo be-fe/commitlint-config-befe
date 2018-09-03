@@ -28,10 +28,12 @@
     ]
   },
   "devDependencies": {
+    "@baidu/cz-conventional-changelog-befe": "^1.0.1",
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
     "@commitlint/lint": "^7.0.0",
     "@types/jest": "^23.3.1",
+    "commitizen": "^2.10.1",
     "conventional-changelog-cli": "^2.0.5",
     "husky": "^0.14.3",
     "jest": "^23.5.0",
@@ -43,5 +45,12 @@
   },
   "dependencies": {
     "@baidu/conventional-changelog-befe": "^1.2.0"
+  },
+  "lang": "zh",
+  "icafe": "befe-erp",
+  "config": {
+    "commitizen": {
+      "path": "./index.js"
+    }
   }
 }
