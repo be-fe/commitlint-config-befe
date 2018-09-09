@@ -6,6 +6,8 @@
 
 var getTypes = require('@baidu/conventional-commit-types-befe')
 
+var types = getTypes().typeKeys
+
 module.exports = {
   parserPreset: require.resolve('@baidu/conventional-changelog-befe'),
   rules: {
@@ -19,6 +21,6 @@ module.exports = {
     'subject-full-stop': [2, 'never', '.'],
     'type-case': [2, 'always', ['lower-case', 'pascal-case']],
     'type-empty': [2, 'never'],
-    'type-enum': [2, 'always', getTypes().typeKeys]
+    'type-enum': [2, 'always', types]
   }
 }
