@@ -65,6 +65,6 @@ it('should `feat(你好): 你好 & chore: abc & feat: something here` success', 
   expect((await lint('feat(你好): 你好 & chore: abc & feat: something here')).errors).toEqual([])
 })
 
-it('should `feat(你好): 你好 \nchore: abc \nfeat: something here` success', async function() {
+it('should `feat(你好): 你好 \\nchore: abc \\nfeat: something here` success', async function() {
   expect((await lint('feat(你好): 你好 \nchore: abc \nfeat: something here')).errors).toEqual([])
 })

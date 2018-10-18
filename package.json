@@ -45,7 +45,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@baidu/conventional-changelog-befe": "^2.0.0"
+    "@baidu/conventional-changelog-befe": "^2.0.0",
     "@baidu/conventional-commit-types-befe": "^1.0.0"
   },
   "lang": "zh",
