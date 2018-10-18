@@ -53,10 +53,18 @@ it('should `Test(123): anc` success', async function() {
   expect((await lint('Test(123): anc')).errors).toEqual([])
 })
 
-it('should `test(说说): anc` success', async function() {
-  expect((await lint('test(说说): anc')).errors).toEqual([])
+it('should `test(说说): a 收拾收拾是 nc` success', async function() {
+  expect((await lint('test(说说): a 收拾收拾是 nc')).errors).toEqual([])
 })
 
 it('should `Feat(你好): 你好` success', async function() {
   expect((await lint('Feat(你好): 你好')).errors).toEqual([])
+})
+
+it('should `feat(你好): 你好 & chore: abc & feat: something here` success', async function() {
+  expect((await lint('feat(你好): 你好 & chore: abc & feat: something here')).errors).toEqual([])
+})
+
+it('should `feat(你好): 你好 \nchore: abc \nfeat: something here` success', async function() {
+  expect((await lint('feat(你好): 你好 \nchore: abc \nfeat: something here')).errors).toEqual([])
 })

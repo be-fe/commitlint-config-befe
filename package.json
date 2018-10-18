@@ -42,6 +42,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@baidu/conventional-changelog-befe": "^1.2.0"
+    "@baidu/conventional-changelog-befe": "^2.0.0"
   }
 }
