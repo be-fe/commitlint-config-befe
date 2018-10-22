@@ -9,11 +9,9 @@ const { rules, parserPreset } = require('../')
 
 let parseOpts, lint
 beforeAll(function() {
-  return require(parserPreset)
-    .then(d => (parseOpts = d.parseOpts))
-    .then(() => {
-      lint = msg => _lint(msg, rules, { parseOpts })
-    })
+  return Promise.resolve(require(parserPreset)).then(d => {
+    lint = msg => _lint(msg, rules, d)
+  })
 })
 
 it('should `Feat: abc`', async function() {
