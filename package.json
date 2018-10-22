@@ -5,6 +5,7 @@
   "description": "commitlint config preet for baidu BEFE.",
   "author": "imcuttle",
   "scripts": {
+    "preinstall": "node deprecated.js",
     "test": "jest",
     "prepublishOnly": "npm test",
     "precommit": "pretty-quick --staged",

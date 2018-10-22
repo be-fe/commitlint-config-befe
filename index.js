@@ -3,7 +3,7 @@
  * @author imcuttle
  * @description
  */
-
+require('./deprecated')
 var getTypes = require('@baidu/conventional-commit-types-befe')
 
 var types = getTypes().typeKeys
