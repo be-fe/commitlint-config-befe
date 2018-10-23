@@ -1,11 +1,10 @@
 {
-  "name": "@baidu/commitlint-config-befe",
+  "name": "commitlint-config-befe",
   "version": "2.0.2",
   "main": "index.js",
   "description": "commitlint config preet for baidu BEFE.",
   "author": "imcuttle",
   "scripts": {
-    "preinstall": "node deprecated.js",
     "test": "jest",
     "prepublishOnly": "npm test",
     "precommit": "pretty-quick --staged",
@@ -45,8 +44,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@baidu/conventional-changelog-befe": "^2.0.0",
-    "@baidu/conventional-commit-types-befe": "^1.0.0"
+    "conventional-changelog-befe": "^2.0.5",
+    "conventional-commit-types-befe": "^1.0.7"
   },
   "lang": "zh",
   "icafe": "befe-erp",

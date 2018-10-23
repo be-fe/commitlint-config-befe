@@ -3,13 +3,13 @@
  * @author imcuttle
  * @description
  */
-require('./deprecated')
-var getTypes = require('@baidu/conventional-commit-types-befe')
+
+var getTypes = require('conventional-commit-types-befe')
 
 var types = getTypes().typeKeys
 
 module.exports = {
-  parserPreset: require.resolve('@baidu/conventional-changelog-befe'),
+  parserPreset: require.resolve('conventional-changelog-befe'),
   rules: {
     'body-leading-blank': [1, 'always'],
     'footer-leading-blank': [1, 'always'],

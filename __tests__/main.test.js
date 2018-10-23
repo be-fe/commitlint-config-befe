@@ -36,7 +36,7 @@ it('should `Feet: 哈哈哈` fails', async function() {
     {
       level: 2,
       message:
-        'type must be one of [build, chore, ci, docs, feat, fix, perf, refactor, revert, style, test, temp, Build, Chore, Ci, Docs, Feat, Fix, Perf, Refactor, Revert, Style, Test, Temp]',
+        'type must be one of [feat, fix, docs, style, chore, build, ci, perf, refactor, revert, test, temp, Feat, Fix, Docs, Style, Chore, Build, Ci, Perf, Refactor, Revert, Test, Temp]',
       name: 'type-enum',
       valid: false
     }
