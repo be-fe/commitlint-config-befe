@@ -1,4 +1,6 @@
-# commitlint-config-befe
+# commitlint-config-befe (Deprecated)
+
+## 迁移至 [GitHub](https://github.com/be-fe/commitlint-config-befe)
 
 <!-- [![build status](https://img.shields.io/travis/imcuttle/commitlint-config-befe/master.svg?style=flat-square)](https://travis-ci.org/imcuttle/commitlint-config-befe)
 [![Test coverage](https://img.shields.io/codecov/c/github/imcuttle/commitlint-config-befe.svg?style=flat-square)](https://codecov.io/github/imcuttle/commitlint-config-befe?branch=master)
@@ -10,9 +12,7 @@ commitlint config preet for baidu BEFE.
 ## 安装
 
 ```bash
-npm install \
-  @baidu/commitlint-config-befe @commitlint/cli husky \
-  -D --registry=http://registry.npm.baidu-int.com
+npm install commitlint-config-befe @commitlint/cli husky
 ```
 
 ## 使用
@@ -25,7 +25,7 @@ npm install \
     "commitmsg": "commitlint -e $GIT_PARAMS"
   },
   "commitlint": {
-    "extends": ["@baidu/commitlint-config-befe"]
+    "extends": ["commitlint-config-befe"]
   }
 }
 ```
